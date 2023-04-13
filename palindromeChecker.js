@@ -29,10 +29,10 @@ function isPal(arr) {
   return "Pal-indrome!";
 }
 
-// var result1 = isPal([1, 1, 2, 2, 1]);
-// console.log(result1);
-// var result2 = isPal( [3, 2, 1, 1, 2, 3] );
-// console.log(result2);
+var result1 = isPal([1, 1, 2, 2, 1]);
+console.log(result1);
+var result2 = isPal( [3, 2, 1, 1, 2, 3] );
+console.log(result2);
 console.log(isPal("racecar"));
 console.log(isPal("civic"));
 
