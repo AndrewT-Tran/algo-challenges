@@ -43,7 +43,7 @@ for(var i=0; i<pokémon.length; i++) {
 
 for(var i=0; i<pokémon.length; i++) {
     if(pokémon[i].id % 3 == 0) {
-        console.log(pokémon[i].name);
+        console.log(pokémon[i]);
     }
 }
 
