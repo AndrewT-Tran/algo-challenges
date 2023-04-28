@@ -23,51 +23,39 @@ hint: How many digits are in row n?
 
 */
 
-
 function generatePascalsTriangle(n) {
-    let triangle = []
-    if (n === 0) {
+  let triangle = [];
+  if (n === 0) {
     return triangle;
-}
-triangle.push([1]);
-for (let i = 1; i < n; i++) {
+  }
+  triangle.push([1]);
+  for (let i = 1; i < n; i++) {
     let prevRow = triangle[i - 1];
     let newRow = [];
-    console.log('prevRow ', prevRow)
-    console.log('newRow ', newRow);
+    console.log("prevRow ", prevRow);
+    console.log("newRow ", newRow);
     newRow.push(1); // push 1
     for (let j = 1; j < prevRow.length; j++) {
-        console.log( "j ", j)
-        newRow.push(prevRow[j - 1] + prevRow[j]);
+      console.log("j ", j);
+      newRow.push(prevRow[j - 1] + prevRow[j]);
     }
     newRow.push(1);
     triangle.push(newRow);
+  }
+
+  // Code Here!
+
+  return triangle;
 }
 
+console.log(generatePascalsTriangle(1));
+// => [[1]]
 
-    // Code Here!
+console.log(generatePascalsTriangle(2));
+// => [[1], [1, 1]]
 
-    return triangle;
-}
+console.log(generatePascalsTriangle(5));
+// => [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
 
-
-// console.log(generatePascalsTriangle(1));
-// // => [[1]]
-
-// console.log(generatePascalsTriangle(2));
-// // => [[1], [1, 1]]
-
-// console.log(generatePascalsTriangle(5));
-// // => [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
-
-// console.log(generatePascalsTriangle(6));
-// => [
-//   [ 1 ],
-//   [ 1, 1 ],
-//   [ 1, 2, 1 ],
-//   [ 1, 3, 3, 1 ],
-//   [ 1, 4, 6, 4, 1 ],
-//   [ 1, 5, 10, 10, 5, 1 ]
-// ]
-
-console.log(generatePascalsTriangle(12));
+console.log(generatePascalsTriangle(6));
+[[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1], [1, 5, 10, 10, 5, 1]];
