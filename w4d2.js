@@ -35,9 +35,7 @@ const expected4 = "GIT";
 // return newStr;
 // }
 
-
 //without split method
-
 
 function acronymize(str) {
   var newStr = "";
