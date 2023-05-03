@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #959e7d;
+  color: #736f4e;
+}
+
+h2 {
+  text-align: center;
+  padding: 50px;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 42px;
+  font-weight: 400;
+  /* margin: 20px 0; */
+}
+
+#gamestatus {
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+button {
+  padding: 5px;
+  border: 2px solid #736f4e;
+  border-radius: 5px;
+}
+
+#the-dojo {
+  padding: 30px;
+  width: 320px;
+  /* width: 100px; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tatami {
+  background-color: #b4c292;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #736f4e;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+.tatami:active {
+  border: 2px solid #999;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
