@@ -51,7 +51,9 @@ function encodeStr(str) {
     }
   }
   if (newStr.length < str.length) {
+    // sanity check
     // console.log("newStr: " + newStr, "str: " + str)
+    // newstr should be shorter than original because it gets condensed
     return newStr;
   } else {
     return str;
