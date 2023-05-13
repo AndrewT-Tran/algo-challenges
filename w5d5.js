@@ -49,35 +49,37 @@ function updateInventory(newInv, currInv) {
   var newInvObj = {};
   var currInvObj = {};
   var result = [];
-  for (var i = 0; i < newInv.length; i++) { //iterates through the new inventory and creates an object with the name as the key and the quantity as the value
+  debugger;
+  for (var i = 0; i < newInv.length; i++) {
+    //iterates through the new inventory and creates an object with the name as the key and the quantity as the value
     newInvObj[newInv[i].name] = newInv[i].quantity; // { 'Grain of Rice': 9000, 'Peanut Butter': 50, 'Royal Jelly': 20 }
-    
+
     let name = newInv[i].name;
     let quantity = newInv[i].quantity;
-    console.log('name', name, 'quantity', quantity)
+    console.log("name", name, "quantity", quantity);
   }
 
   for (var i = 0; i < currInv.length; i++) {
-    currInvObj[currInv[i].name] = currInv[i].quantity;
+    //iterates through the current inventory and creates an object with the name as the key and the quantity as the value
+    currInvObj[currInv[i].name] = currInv[i].quantity; // { 'Peanut Butter': 20, 'Grain of Rice': 1 }
   }
 
-
   for (var key in newInvObj) {
-    if (key in currInvObj) {  //if the key exists in the current inventory object, add the value to the current inventory object
+    if (key in currInvObj) {
+      //if the key exists in the current inventory object, add the value to the current inventory object
       currInvObj[key] += newInvObj[key]; // { 'Peanut Butter': 70, 'Grain of Rice': 9001, 'Royal Jelly': 20 }
     } else {
       currInvObj[key] = newInvObj[key];
     }
   }
-  for (var key in currInvObj) { //iterates through the current inventory object and pushes the key and value into the result array
-    result.push({ name: key, quantity: currInvObj[key] }); 
+  for (var key in currInvObj) {
+    //iterates through the current inventory object and pushes the key and value into the result array
+    result.push({ name: key, quantity: currInvObj[key] });
   }
+  debugger;
   return result;
 }
 
 console.log(updateInventory(newInv1, currInv1));
 console.log(updateInventory(newInv2, currInv2));
 console.log(updateInventory(newInv3, currInv3));
-
-
-
