@@ -24,6 +24,7 @@ const expected2 = -1;
  * @returns {number} The balance index or -1 if there is none.
  */
 function balanceIndex(nums) {
+  debugger
   for (let i = 0; i < nums.length; i++) {
     // loop through array
     // counter
@@ -41,9 +42,10 @@ function balanceIndex(nums) {
     }
   }
   return -1;
+  debugger
 }
 
 console.log(balanceIndex(nums1));
-console.log(balanceIndex(nums2));
+// console.log(balanceIndex(nums2));
 
 /*****************************************************************************/
