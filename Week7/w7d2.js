@@ -71,11 +71,13 @@ const expected9 = 21;
  * @returns {number} The fibonacci number at the given position.
  */
 function fibonacci(num) { 
-    if (num < 2) {
-        return num;
-    }
-  return fibonacci(num - 1) + fibonacci(num - 2);
+  if (num < 2) {  // base case  // 0, 1 
 
+      
+        return num;
+  }
+  return fibonacci(num - 1) + fibonacci(num - 2); //  2, 3, 4, 5, 6, 7, 8 
 }
-console.log(fibonacci(8));
+
+console.log(fibonacci(9));
 /*****************************************************************************/
