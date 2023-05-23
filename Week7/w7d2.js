@@ -31,7 +31,10 @@ const expected3 = 1;
  *    floor decimals.
  * @returns {number} The result of !n.
  */
-function factorial(n) { }
+function factorial(n) {
+
+
+ }
 
 /*****************************************************************************/
 
@@ -70,14 +73,36 @@ const expected9 = 21;
  * @param {number} num The position of the desired number in the fibonacci sequence.
  * @returns {number} The fibonacci number at the given position.
  */
-function fibonacci(num) { 
-  if (num < 2) {  // base case  // 0, 1 
+// function fibonacci(num) { 
+//   if (num <= 1) {  // base case 
+//      // 0, 1 
+//     // we are checking to see if the value is gonnan be less than 0 cause that would break the case 
+//         return num;
+//   }
 
-      
-        return num;
+
+//   return fibonacci(num - 1) + fibonacci(num - 2); //  2, 3, 4, 5, 6, 7, 8 
+//   //recursive step  
+
+// }
+
+
+
+
+function fibonacci(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
   }
-  return fibonacci(num - 1) + fibonacci(num - 2); //  2, 3, 4, 5, 6, 7, 8 
+
+  return b;
 }
 
-console.log(fibonacci(9));
+console.log(fibonacci(0));
+console.log(fibonacci(1));
+console.log(fibonacci(8));
 /*****************************************************************************/
