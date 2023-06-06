@@ -1,13 +1,13 @@
-/* 
+/*
     Recursive Factorial
     Input: integer
     Output: integer, product of ints from 1 up to given integer
-    
+
     If less than zero, treat as zero.
     Bonus: If not integer, truncate (remove decimals).
-    
+
     Experts tell us 0! is 1.
-    
+
     rFact(3) = 6 (1*2*3)
     rFact(6.8) = 720 (1*2*3*4*5*6)
 */
@@ -39,9 +39,9 @@ function factorial(n) {
 /*****************************************************************************/
 
 
-/* 
+/*
     Return the fibonacci number at the nth position, recursively.
-    
+
     Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
     The next number is found by adding up the two numbers before it,
@@ -73,16 +73,16 @@ const expected9 = 21;
  * @param {number} num The position of the desired number in the fibonacci sequence.
  * @returns {number} The fibonacci number at the given position.
  */
-// function fibonacci(num) { 
-//   if (num <= 1) {  // base case 
-//      // 0, 1 
-//     // we are checking to see if the value is gonnan be less than 0 cause that would break the case 
+// function fibonacci(num) {
+//   if (num <= 1) {  // base case
+//      // 0, 1
+//     // we are checking to see if the value is gonnan be less than 0 cause that would break the case
 //         return num;
 //   }
 
 
-//   return fibonacci(num - 1) + fibonacci(num - 2); //  2, 3, 4, 5, 6, 7, 8 
-//   //recursive step  
+//   return fibonacci(num - 1) + fibonacci(num - 2); //  2, 3, 4, 5, 6, 7, 8
+//   //recursive step
 
 // }
 
