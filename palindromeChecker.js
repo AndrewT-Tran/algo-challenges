@@ -6,6 +6,7 @@ tacocat
 But in our case we'll be looking at some arrays, can the values in the array be read the same forwards as backward */
 
 function isPal(arr) {
+  debugger
   for (var left = 0; left < arr.length / 2; left++) {
     var right = arr.length - 1 - left;
     //gives us value at end of array
@@ -21,18 +22,17 @@ function isPal(arr) {
       console.log({ a, b });
       console.log(arr);
       return "Not a pal-indrome!";
-    }
-    console.table({ a, b });
-    console.log(arr);
-  }
 
+    }
+  }
+debugger
   return "Pal-indrome!";
 }
 
-var result1 = isPal([1, 1, 2, 2, 1]);
-console.log(result1);
-var result2 = isPal( [3, 2, 1, 1, 2, 3] );
-console.log(result2);
+// var result1 = isPal([1, 1, 2, 2, 1]);
+// console.log(result1);
+// var result2 = isPal( [3, 2, 1, 1, 2, 3] );
+// console.log(result2);
 console.log(isPal("racecar"));
 console.log(isPal("civic"));
 
