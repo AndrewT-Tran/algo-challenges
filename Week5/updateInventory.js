@@ -1,8 +1,8 @@
-/* 
+/*
   Given an array of objects / dictionaries to represent new inventory,
   and an array of objects / dictionaries to represent current inventory,
   update the quantities of the current inventory
-  
+
   if the item doesn't exist in current inventory, add it to the inventory
   return the current inventory after updating it.
 */
