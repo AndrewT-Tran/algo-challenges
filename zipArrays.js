@@ -41,10 +41,10 @@ const expected2 = {};
 function zipArraysIntoMap(keys, values) {
     const object2 = {};
     keys.forEach((key, i) => { // iterates over keys and sets key to string
-        console.log('key - ',key,'i = ', i)
+        console.log('key - ', key, 'i = ', i)
         object2[key] = values[i];
-// here we take the new key string to be a obj key and values to be values
-// obj
+        // here we take the new key string to be a obj key and values to be values
+        // obj
     }
     );
     return object2;
