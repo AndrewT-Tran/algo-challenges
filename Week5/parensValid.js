@@ -1,4 +1,4 @@
-/* 
+/*
 Parens Valid
 
 Given an str that has parenthesis in it
@@ -57,10 +57,10 @@ console.log(parensValid(str4));
 /*****************************************************************************/
 
 
-/* 
+/*
 Braces Valid
 
-Given a string sequence of parentheses, braces and brackets, determine whether it is valid. 
+Given a string sequence of parentheses, braces and brackets, determine whether it is valid.
 */
 
 const str5 = "W(a{t}s[o(n{ c}o)m]e )h[e{r}e]!";
@@ -83,7 +83,9 @@ const expected7 = false;
 function bracesValid(str) {
     var count = 0;
     for (var i = 0; i < str.length; i++) {
-        if (str[i] == "(" || str[i] == "[" || str[i] == "{") { //basically counting the braces and making sure they are even for each open tehre is gonna be a close should net 0
+        if (str[i] == "(" || str[i] == "[" || str[i] == "{") {
+            //basically counting the braces and making sure they are even
+            //for each open tbere is gonna be a close should net 0
             count++;
         }
         else if (str[i] == ")" || str[i] == "]" || str[i] == "}") { // if there is a closing brace, then we subtract from the count
