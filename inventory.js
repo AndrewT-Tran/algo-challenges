@@ -84,4 +84,3 @@ function updateInventory(newInv, currInv) {
 console.log(updateInventory(newInv1, currInv1));
 console.log(updateInventory(newInv2, currInv2));
 console.log(updateInventory(newInv3, currInv3));
-console.log(updateInventory('Peanut Butter'))
