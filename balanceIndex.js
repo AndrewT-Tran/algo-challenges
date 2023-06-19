@@ -37,15 +37,15 @@ function balanceIndex(nums) {
     var sum = 0;
     for (var i = 0; i < nums.length; i++) {
         sum += nums[i]; // find the sum of the array
-        console.log('sum = ' + sum);
+        // console.log('sum = ' + sum);
     }
     // finds the sum of the left side of the array and compared to the total sum and check at what point they are balanced
     var leftSum = 0;
     for (var i = 0; i < nums.length; i++) {
         if (leftSum == sum - leftSum - nums[i]) {
             // checks if the left sum is equal to the right sum
-            console.log("leftSum = " + leftSum);
-            console.log("sum - leftSum - nums[i] = " + (sum - leftSum - nums[i]));
+            // console.log("leftSum = " + leftSum);
+            // console.log("sum - leftSum - nums[i] = " + (sum - leftSum - nums[i]));
             return i;
         }
         // adds the next number to the left sum
