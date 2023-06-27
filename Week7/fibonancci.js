@@ -31,13 +31,9 @@ const expected3 = 1;
  *    floor decimals.
  * @returns {number} The result of !n.
  */
-function factorial(n) {
-
-
- }
+function factorial(n) {}
 
 /*****************************************************************************/
-
 
 /*
     Return the fibonacci number at the nth position, recursively.
@@ -80,26 +76,24 @@ const expected9 = 21;
 //         return num;
 //   }
 
-
 //   return fibonacci(num - 1) + fibonacci(num - 2); //  2, 3, 4, 5, 6, 7, 8
 //   //recursive step
 
 // }
 
+function fibonacci(num) {
+	var a = 1,
+		b = 0,
+		temp;
 
+	while (num >= 0) {
+		temp = a;
+		a = a + b;
+		b = temp;
+		num--;
+	}
 
-
-function fibonacci(num){
-  var a = 1, b = 0, temp;
-
-  while (num >= 0){
-    temp = a;
-    a = a + b;
-    b = temp;
-    num--;
-  }
-
-  return b;
+	return b;
 }
 
 console.log(fibonacci(0));
