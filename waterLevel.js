@@ -49,6 +49,8 @@ function measureWaterLevels(waterLevels) {
             //each iteration we are comparing currennt to min 
             // if the min is greater that means we have an increase in water level
             rise.push(waterLevels[i] - min)
+            //here is an array of the rise levels
+            ///max will give us the largest value of that array
             console.log(rise)
             //Math.Max will give you the max value of the parameters
             max = Math.max(max, waterLevels[i] - min)
