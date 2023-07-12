@@ -1,5 +1,3 @@
-
-
 /**
  * From a Chipotle interview.
  * encodeStr algo was also given in this interview (aaabbcdd => a3b2cd2).
@@ -15,7 +13,7 @@ const riverLevels2 = [15, 17, 30, 14, 5, 16, 25, 9, 3];
 const expected2 = 20; // 25 - 5 = 20
 
 const riverLevels3 = [15, 17, 30, 20, 50, 16, 25, 9, 3];
-const expected3 = 30; // 50 - 20 = 30
+const expected3 = 35; // 50 - 15 = 35
 
 const riverLevels4 = [21, 18, 10, 11, 14, 9, 5, 13, 15, 7, 1, 6, 12, 4];
 const expected4 = 11; // 12 - 1 = 11
@@ -43,18 +41,18 @@ const expected8 = -1;
 function measureWaterLevels(waterLevels) {
     let max = -1;
     let min = waterLevels[0];
-    let rise = [];
+    // let rise = [];
     for (let i = 1; i < waterLevels.length; i++) {
         if (waterLevels[i] > min) {
-            //each iteration we are comparing currennt to min 
+            //each iteration we are comparing currennt to min
             // if the min is greater that means we have an increase in water level
-            rise.push(waterLevels[i] - min)
+            // rise.push(waterLevels[i] - min)
             //here is an array of the rise levels
             ///max will give us the largest value of that array
-            console.log(rise)
+            // console.log(rise)
             //Math.Max will give you the max value of the parameters
             max = Math.max(max, waterLevels[i] - min)
-            //calculates the rise in levels and sets that as the max 
+            //calculates the rise in levels and sets that as the max
         }
         else {
             min = waterLevels[i];
@@ -67,13 +65,13 @@ function measureWaterLevels(waterLevels) {
     return max
 
 }
-// console.log(measureWaterLevels(riverLevels1));
+console.log(measureWaterLevels(riverLevels1));
 console.log(measureWaterLevels(riverLevels2));
-// console.log(measureWaterLevels(riverLevels3));
-// console.log(measureWaterLevels(riverLevels4));
-// console.log(measureWaterLevels(riverLevels5));
-// console.log(measureWaterLevels(riverLevels6));
-// console.log(measureWaterLevels(riverLevels7));
-// console.log(measureWaterLevels(riverLevels8));
+console.log(measureWaterLevels(riverLevels3));
+console.log(measureWaterLevels(riverLevels4));
+console.log(measureWaterLevels(riverLevels5));
+console.log(measureWaterLevels(riverLevels6));
+console.log(measureWaterLevels(riverLevels7));
+console.log(measureWaterLevels(riverLevels8));
 
 /*****************************************************************************/
