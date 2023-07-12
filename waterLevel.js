@@ -43,10 +43,14 @@ const expected8 = -1;
 function measureWaterLevels(waterLevels) {
     let max = -1;
     let min = waterLevels[0];
+    let rise = [];
     for (let i = 1; i < waterLevels.length; i++) {
         if (waterLevels[i] > min) {
             //each iteration we are comparing currennt to min 
             // if the min is greater that means we have an increase in water level
+            rise.push(waterLevels[i] - min)
+            console.log(rise)
+            //Math.Max will give you the max value of the parameters
             max = Math.max(max, waterLevels[i] - min)
             //calculates the rise in levels and sets that as the max 
         }
@@ -61,13 +65,13 @@ function measureWaterLevels(waterLevels) {
     return max
 
 }
-console.log(measureWaterLevels(riverLevels1));
+// console.log(measureWaterLevels(riverLevels1));
 console.log(measureWaterLevels(riverLevels2));
-console.log(measureWaterLevels(riverLevels3));
-console.log(measureWaterLevels(riverLevels4));
-console.log(measureWaterLevels(riverLevels5));
-console.log(measureWaterLevels(riverLevels6));
-console.log(measureWaterLevels(riverLevels7));
-console.log(measureWaterLevels(riverLevels8));
+// console.log(measureWaterLevels(riverLevels3));
+// console.log(measureWaterLevels(riverLevels4));
+// console.log(measureWaterLevels(riverLevels5));
+// console.log(measureWaterLevels(riverLevels6));
+// console.log(measureWaterLevels(riverLevels7));
+// console.log(measureWaterLevels(riverLevels8));
 
 /*****************************************************************************/
